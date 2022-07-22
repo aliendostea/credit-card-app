@@ -1,0 +1,11 @@
+[
+  {
+    "id": "base",
+    "routesVariants": ["add-headers:enabled", "post-creditcard:success"]
+  },
+  {
+    "id": "no-headers",
+    "from": "base",
+    "routesVariants": ["add-headers:disabled"]
+  }
+]

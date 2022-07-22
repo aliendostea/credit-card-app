@@ -1,0 +1,96 @@
+$translateY-1px: translateY(1px);
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.31px;
+    line-height: 1;
+    text-decoration: none;
+    color: white;
+    padding: 1.2rem 2.1rem;
+    background-color: hsl(250.9, 46.5%, 58.2%);
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      background-color: rgb(111, 99, 167);
+    }
+
+    &:active {
+      transform: $translateY-1px;
+    }
+  }
+  &-normal {
+    border-radius: 12px;
+  }
+  &-btn2 {
+    height: 5rem;
+    padding: 1.2rem 1.1rem;
+    background-color: hsl(250, 19.5%, 69.8%);
+  }
+
+  & &_text {
+    font-size: 1.35rem;
+  }
+
+  &:disabled {
+    background-color: rgb(225, 218, 255);
+    cursor: not-allowed;
+
+    &:hover {
+      transform: translateY(0);
+    }
+  }
+
+  &-green {
+    background-color: rgb(34, 206, 109);
+    &:hover {
+      transform: translateY(0);
+      background-color: rgb(34, 206, 109);
+    }
+
+    &:disabled {
+      background-color: rgb(34, 206, 109);
+
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+  }
+  &-red {
+    background-color: #c12626;
+    &:hover {
+      transform: translateY(0);
+      background-color: #c12626;
+    }
+
+    &:disabled {
+      background-color: #c12626;
+
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+  }
+}

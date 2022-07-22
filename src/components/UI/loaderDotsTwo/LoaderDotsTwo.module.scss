@@ -1,0 +1,43 @@
+.loader {
+  justify-self: center;
+  display: flex;
+
+  &__item {
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    background-color: #a9aaf3;
+    border-radius: 50%;
+    list-style: none;
+    animation: animation-loading 1.1s infinite;
+
+    &:nth-child(1) {
+      animation-delay: -0.3s;
+    }
+    &:nth-child(2) {
+      animation-delay: -0.15s;
+    }
+  }
+
+  &__parent {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+  }
+}
+
+@keyframes animation-loading {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

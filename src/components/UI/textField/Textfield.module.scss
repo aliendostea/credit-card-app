@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+.input {
+  width: 100%;
+  display: inline-block;
+  font-family: "Cairo", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #1c1f2e;
+  letter-spacing: 0.31px;
+  background-color: #fff;
+  border: 1px solid #d9d0e9;
+  border-radius: 4.5px;
+  outline: none;
+  overflow-x: hidden;
+  padding: 0 1.8rem 0 1.2rem;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgb(27, 144, 212);
+    box-shadow: 0 3px 20px #cecece;
+  }
+
+  &-box {
+    width: 100%;
+    display: grid;
+    grid-template-rows: min-content 6rem 2rem;
+  }
+  &-label {
+    display: block;
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+
+    &--error {
+      color: #c12626;
+    }
+  }
+  &-span-error {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #c12626;
+    margin-top: 0.5rem;
+  }
+  &--error {
+    border: 1px solid #c12626;
+
+    &:focus {
+      border: 1px solid #c12626;
+    }
+  }
+}

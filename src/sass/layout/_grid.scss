@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.main-content {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: minmax(min-content, 97rem);
+  grid-template-rows: min-content;
+  grid-row-gap: 3rem;
+  justify-content: center;
+  align-content: start;
+  padding: 9rem;
+}
+
+.main-content__parent {
+  display: grid;
+  grid-template-rows: 9rem minmax(76rem, calc(100vh - 8rem));
+
+  @include respond(phone) {
+    grid-template-rows: 9rem minmax(102rem, calc(100vh - 8rem));
+  }
+}
